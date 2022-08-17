@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GoodRestaurantApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GoodRestaurantApp
+
+  target 'GoodRestaurantAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GoodRestaurantAppUITests' do
+    # Pods for testing
+  end
+
+    pod 'RxSwift'                   , '~> 6.0'
+    pod 'RxCocoa'                   , '~> 6.0'
+    pod 'RxDataSources'             , '~> 5.0'
+    pod 'RxFlow'
+    pod 'SwiftyJSON'                , '~> 4.0'
+    pod 'ReactorKit'		  , '~> 3.1.0'
+    pod 'Alamofire'                 , '~> 5.1'
+    pod 'SnapKit'
+
+
+end
