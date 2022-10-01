@@ -7,21 +7,26 @@
 
 import UIKit
 
-
+// 지도 뷰를 로드하고 푸시 등의 이벤트를 처리하는 VC
 class MainVC: UIViewController {
+    
+    weak var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        setupUI()
+        bind()
+        showMap()
     }
-
-
 }
 
 extension MainVC {
-    func setupUI() {
-        view.backgroundColor = .white
+    func bind() {
         
+    }
+}
+
+extension MainVC {
+    func showMap() {
+        coordinator?.presentRandomPicture()
     }
 }

@@ -10,16 +10,19 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var mainCoordinator: MainCoordinator?
     
     // mainViewController를 스토리보드가 아닌 코드로 구성하기 위한 함수
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-         guard let windowScene = (scene as? UIWindowScene) else { return }
-         window = UIWindow(windowScene: windowScene)
-         let mainViewController = MainVC()
-         let navigationController = UINavigationController(rootViewController: mainViewController)
-         window?.rootViewController = navigationController
-         window?.makeKeyAndVisible()
-     }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
+        let backgroundVC = BackgroundVC()
+        let navigationController = UINavigationController(rootViewController: backgroundVC)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        mainCoordinator = MainCoordinator(navigationController: navigationController, rootViewController: backgroundVC)
+        mainCoordinator?.start()
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

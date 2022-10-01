@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0080A1B6F7435A7CC56F36D4 /* Pods_GoodRestaurantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FE0448F63AA3E660492E2D /* Pods_GoodRestaurantApp.framework */; };
+		3E3AD57F28B090B40010EACF /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD57E28B090B40010EACF /* MapVC.swift */; };
+		3E3AD58128B090F40010EACF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD58028B090F40010EACF /* MainCoordinator.swift */; };
+		3E3AD58528B09B6B0010EACF /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD58428B09B6B0010EACF /* UIViewController + Extension.swift */; };
+		3E3AD58828B131F30010EACF /* BackgroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD58728B131F30010EACF /* BackgroundVC.swift */; };
+		3E3AD58A28B136520010EACF /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD58928B136520010EACF /* MapCoordinator.swift */; };
+		3E64F41628E8273500D67255 /* TaskQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64F41528E8273500D67255 /* TaskQueueScheduler.swift */; };
+		3E64F41828E827F200D67255 /* CoreInitTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64F41728E827F200D67255 /* CoreInitTask.swift */; };
+		3E64F41A28E8291700D67255 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64F41928E8291700D67255 /* Task.swift */; };
+		3E64F41D28E8385D00D67255 /* RandomPictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64F41C28E8385D00D67255 /* RandomPictureVC.swift */; };
+		3E64F41F28E838B000D67255 /* RandomPictureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E64F41E28E838B000D67255 /* RandomPictureCoordinator.swift */; };
 		3EBB21FD28AD0234008334EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB21FC28AD0234008334EE /* AppDelegate.swift */; };
 		3EBB21FF28AD0234008334EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB21FE28AD0234008334EE /* SceneDelegate.swift */; };
 		3EBB220128AD0234008334EE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB220028AD0234008334EE /* MainVC.swift */; };
@@ -41,6 +51,16 @@
 
 /* Begin PBXFileReference section */
 		00FE0448F63AA3E660492E2D /* Pods_GoodRestaurantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodRestaurantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3AD57E28B090B40010EACF /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		3E3AD58028B090F40010EACF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		3E3AD58428B09B6B0010EACF /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		3E3AD58728B131F30010EACF /* BackgroundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVC.swift; sourceTree = "<group>"; };
+		3E3AD58928B136520010EACF /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		3E64F41528E8273500D67255 /* TaskQueueScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskQueueScheduler.swift; sourceTree = "<group>"; };
+		3E64F41728E827F200D67255 /* CoreInitTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreInitTask.swift; sourceTree = "<group>"; };
+		3E64F41928E8291700D67255 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3E64F41C28E8385D00D67255 /* RandomPictureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPictureVC.swift; sourceTree = "<group>"; };
+		3E64F41E28E838B000D67255 /* RandomPictureCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPictureCoordinator.swift; sourceTree = "<group>"; };
 		3EBB21F928AD0233008334EE /* GoodRestaurantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodRestaurantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBB21FC28AD0234008334EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EBB21FE28AD0234008334EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +123,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3E3AD57D28B090A00010EACF /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				3E3AD57E28B090B40010EACF /* MapVC.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		3E3AD58228B09B510010EACF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3E3AD58328B09B580010EACF /* UIViewController */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3E3AD58328B09B580010EACF /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3AD58428B09B6B0010EACF /* UIViewController + Extension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		3E3AD58628B0A0380010EACF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3EBE65AE28AD0D7700981C91 /* CoordinatorProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3E64F41428E8272800D67255 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3E64F41528E8273500D67255 /* TaskQueueScheduler.swift */,
+				3E64F41728E827F200D67255 /* CoreInitTask.swift */,
+				3E64F41928E8291700D67255 /* Task.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3E64F41B28E8383500D67255 /* RandomPicture */ = {
+			isa = PBXGroup;
+			children = (
+				3E64F41C28E8385D00D67255 /* RandomPictureVC.swift */,
+			);
+			path = RandomPicture;
+			sourceTree = "<group>";
+		};
 		3EBB21F028AD0233008334EE = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +227,7 @@
 		3EBB222F28AD09A0008334EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3E64F41428E8272800D67255 /* Base */,
 				3EBE65AC28AD0D4900981C91 /* PresentationLayer */,
 				3EBE65AB28AD0D4100981C91 /* DomainLayer */,
 				3EBE65AA28AD0D3700981C91 /* DataLayer */,
@@ -185,7 +256,10 @@
 		3EBB223228AD0A0D008334EE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3E64F41B28E8383500D67255 /* RandomPicture */,
+				3E3AD57D28B090A00010EACF /* Map */,
 				3EBB220028AD0234008334EE /* MainVC.swift */,
+				3E3AD58728B131F30010EACF /* BackgroundVC.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -207,6 +281,7 @@
 		3EBE65AC28AD0D4900981C91 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				3E3AD58228B09B510010EACF /* Extension */,
 				3EBE65AD28AD0D6200981C91 /* Coordinators */,
 				3EBB223228AD0A0D008334EE /* UI */,
 			);
@@ -216,7 +291,10 @@
 		3EBE65AD28AD0D6200981C91 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				3EBE65AE28AD0D7700981C91 /* CoordinatorProtocol.swift */,
+				3E3AD58628B0A0380010EACF /* Protocol */,
+				3E3AD58028B090F40010EACF /* MainCoordinator.swift */,
+				3E3AD58928B136520010EACF /* MapCoordinator.swift */,
+				3E64F41E28E838B000D67255 /* RandomPictureCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -473,10 +551,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBB220128AD0234008334EE /* MainVC.swift in Sources */,
+				3E64F41828E827F200D67255 /* CoreInitTask.swift in Sources */,
+				3E3AD57F28B090B40010EACF /* MapVC.swift in Sources */,
+				3E3AD58528B09B6B0010EACF /* UIViewController + Extension.swift in Sources */,
+				3E64F41D28E8385D00D67255 /* RandomPictureVC.swift in Sources */,
+				3E3AD58A28B136520010EACF /* MapCoordinator.swift in Sources */,
+				3E3AD58128B090F40010EACF /* MainCoordinator.swift in Sources */,
 				3EBB220728AD0234008334EE /* GoodRestaurantApp.xcdatamodeld in Sources */,
+				3E64F41F28E838B000D67255 /* RandomPictureCoordinator.swift in Sources */,
 				3EBE65AF28AD0D7700981C91 /* CoordinatorProtocol.swift in Sources */,
+				3E64F41A28E8291700D67255 /* Task.swift in Sources */,
 				3EBB21FD28AD0234008334EE /* AppDelegate.swift in Sources */,
+				3E3AD58828B131F30010EACF /* BackgroundVC.swift in Sources */,
 				3EBB21FF28AD0234008334EE /* SceneDelegate.swift in Sources */,
+				3E64F41628E8273500D67255 /* TaskQueueScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
