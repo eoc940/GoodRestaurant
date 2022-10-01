@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/xcode,swift
 # Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift
 
+# Custom
+*.xcfilelist
+*.xcconfig
+
 ### Swift ###
 # Xcode
 #
@@ -49,6 +53,10 @@ playground.xcworkspace
 # .swiftpm
 
 .build/
+.package.resolved
+Packages/
+Package.pins
+Package.resolved
 
 # CocoaPods
 # We recommend against adding the Pods directory to your .gitignore. However
@@ -56,6 +64,8 @@ playground.xcworkspace
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 # Pods/
 # Add this line if you want to avoid checking in source code from the Xcode workspace
+Pods
+Podfile.lock
 # *.xcworkspace
 
 # Carthage
