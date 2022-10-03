@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import SnapKit
 
 class RandomPictureVC: UIViewController {
     
@@ -14,6 +16,13 @@ class RandomPictureVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+        setupUI()
+        bind()
+    }
+}
+
+extension RandomPictureVC {
+    func bind() {
+        
     }
 }

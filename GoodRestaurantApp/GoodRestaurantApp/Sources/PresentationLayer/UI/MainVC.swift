@@ -15,7 +15,7 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
-        showMap()
+        showRandomPicture()
     }
 }
 
@@ -26,7 +26,7 @@ extension MainVC {
 }
 
 extension MainVC {
-    func showMap() {
+    func showRandomPicture() {
         coordinator?.presentRandomPicture()
     }
 }

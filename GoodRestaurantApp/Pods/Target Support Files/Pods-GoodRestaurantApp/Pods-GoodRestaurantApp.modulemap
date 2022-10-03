@@ -1,6 +1,0 @@
-framework module Pods_GoodRestaurantApp {
-  umbrella header "Pods-GoodRestaurantApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
